@@ -27,10 +27,10 @@ Route::middleware(News::class)->group(function() {
 });
 
 
-/* if time permits, Also changed {id} to {article}
-//Route::put('articles/{article}', 'ArticleController@update');
-//Route::delete('articles/{article}', 'ArticleController@delete');
 
+Route::put('articles/{article}', 'ArticleController@update');
+Route::delete('articles/{article}', 'ArticleController@delete');
+/* if time permits, Also changed {id} to {article}
 //OLD VERSION, UPDATED TO CLEANER CODE
 
 //Route::get('articles', function() {
